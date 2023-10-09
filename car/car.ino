@@ -46,23 +46,23 @@ void loop() {
 
   if (distance1 < 15){
     stopMotors();
-    delay(1000);// turn 1 secomd
+    delay(1000);// reverse
     reverse();
-    delay(1000);// reverse 1 second
+    delay(1000);// move forWard
    }else  {
     driveForward(); 
    }
-  if (distance2 < 30) {
-    stopMotors();//turn 1 second
+  if (distance2 < 20) {
+    stopMotors();//move Foward
     delay(1000);
     turnRight();
-    delay(1000);//turnRight 1 second
+    delay(1000);//turnRight
   }
   if (distance3 < 30) {
-    stopMotors();//turn 1 second
+    stopMotors();//move forWard
     delay(1000);
     turnLeft();
-    delay(1000);//turnLeft 1 second
+    delay(1000);//turnLeft 
   }
   
 }
